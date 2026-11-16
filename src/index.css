@@ -1,0 +1,8 @@
+* {
+  background-color: rgba(253, 253, 255, 0.973);
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0.7rem;
+  place-items: center;
+  max-width: 100%;
+}
