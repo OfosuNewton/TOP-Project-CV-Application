@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { User, GraduationCap, BriefcaseBusiness,SquarePen } from 'lucide-react'
+
 export default function Workspacecard() {
     const [PersonInfo, setPersonInfo] = useState({
         fullName: '',
@@ -9,6 +11,7 @@ export default function Workspacecard() {
 
     const [EduBackground, setEduBackground] = useState({
         school: '',
+
         Degree: '', 
         Year: ''
     });
@@ -93,8 +96,9 @@ export default function Workspacecard() {
         <div className='Container'>
             <form className='section-1' onSubmit={handleSubmit} section='personInfo'>
                 <div>
+                        <User />
                     <h3>Personal Information</h3>
-                    <img src="#" alt="" />
+                    
                 </div>
 
                 <div className='form-controls'>
@@ -111,7 +115,7 @@ export default function Workspacecard() {
                     <label htmlFor="Address">Address</label>
                         <input type="text" name='Address' placeholder="e.g: UMaT Tarkwa" onChange={handleChanges} value={PersonInfo.Address}/>
 
-                    <button className='edit' type='button' onClick={handleEdit_1}>Edit</button>
+                        <button className='edit' type='button' onClick={handleEdit_1}>Edit</button>
                     <button className='submit' type='submit' value='personalInfo'>Submit</button>
 
                 </div>
@@ -122,8 +126,9 @@ export default function Workspacecard() {
 
             <form className='section-2' onSubmit={handleSubmit}>
                 <div>
+                    <GraduationCap/>
                     <h3>Educational Background</h3>
-                    <img src="#" alt="" />
+                    
                 </div>
                 
                 <div className='form-controls'>
@@ -144,7 +149,7 @@ export default function Workspacecard() {
 
             <form className='section-3' onSubmit={handleSubmit}>
                 <div>
-                    <img src="#" alt="" />
+                        < BriefcaseBusiness />
                     <h3>Practical Experience</h3>
                 </div>
 
