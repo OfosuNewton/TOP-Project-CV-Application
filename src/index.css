@@ -123,6 +123,10 @@ h2 {
   padding: 0.6rem;
   font-family:'Courier New', Courier, monospace;
 }
+
+.form-head {
+  gap: 0.6rem;
+}
  
 
  @media (min-width: 400px) {

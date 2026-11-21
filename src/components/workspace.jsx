@@ -95,8 +95,8 @@ export default function Workspacecard() {
         <div className='main-container'>
         <div className='Container'>
             <form className='section-1' onSubmit={handleSubmit} section='personInfo'>
-                <div>
-                        <User />
+                <div className='form-head'>
+                    <User />
                     <h3>Personal Information</h3>
                     
                 </div>
@@ -125,7 +125,7 @@ export default function Workspacecard() {
             </form>
 
             <form className='section-2' onSubmit={handleSubmit}>
-                <div>
+                <div  className='form-head'>
                     <GraduationCap/>
                     <h3>Educational Background</h3>
                     
@@ -148,7 +148,7 @@ export default function Workspacecard() {
             </form>
 
             <form className='section-3' onSubmit={handleSubmit}>
-                <div>
+                    <div className='form-head'>
                         < BriefcaseBusiness />
                     <h3>Practical Experience</h3>
                 </div>
